@@ -7,10 +7,10 @@ import ProtectedRoutes from "./ProtectedRoutes";
 const PageRoutes = () => {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/brokerplatform">
         <Routes>
           <Route path="/" element={<BrokerPlatForm />} />
-            <Route path="/login" element={<LoginPage />} />
+          <Route path="/login" element={<LoginPage />} />
           <Route element={<ProtectedRoutes />}>
             <Route path="/dashboard" element={<DashBoard />} />
           </Route>
