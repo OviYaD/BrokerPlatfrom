@@ -1,0 +1,15 @@
+#root {
+  width: 100%;
+}
+* {
+  font-family: math !important;
+}
+*::-webkit-scrollbar {
+  display: none !important;
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: none;
+  -ms-overflow-style: none; /* For IE and Edge */
+}
