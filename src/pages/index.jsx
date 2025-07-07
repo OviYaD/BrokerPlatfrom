@@ -59,7 +59,14 @@ const BrokerPlatForm = () => {
               />
             </Box>
 
-            <Grid container spacing={3}>
+            <Grid 
+              container 
+              spacing={3}
+              sx={{ 
+                justifyContent: "center",
+                display: "flex"
+              }}
+            >
               {filteredBrokers.map((broker) => (
                 <Grid item xs={12} sm={6} md={3} key={broker.id}>
                   <Card
